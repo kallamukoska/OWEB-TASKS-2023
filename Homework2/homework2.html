@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./styles.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Barbeque</title>
+</head>
+<body>
+    <div class="img-text-container">
+        <p><h1 class="titletext"> The Best Barbeque In Prilep </h1></p>
+        <img class="titleimage1"  src="141825-barbecue-vector-grill-download-free-image.png" alt="Image1"/>
+        <img class="titleimage2" src="pngtree-fresh-raw-meat-illustration-design-vector-png-image_6210988.png" alt="Image2"/>
+    
+        <div>
+            <img class="foodimage1" src="Blog-Grilling-L.jpg" alt="FoodImage1"/>
+            <img class="foodimage2" src="GettyImages-834739661-5ae9bcb8eb97de0039ea0434.jpg" alt="FoodImage2"/>
+            <img class="foodimage3" src="Grilled-Sirloin-Steak-Recipe-Sip-Bite-Go.jpg" alt="FoodImage3"/>
+        </div>
+    </div>
+
+    <div class="ordertable">
+        <form method="post" action="https://www.tripadvisor.com/Restaurants-g612443-c6-Prilep_Pelagonia_Region.html">
+            <table bgcolor=#861900 class="ordertable" class="tableborder" border="1">
+                <caption style="color: #f9e9e6; font-size: 20pt;"><strong>Place your orders here!</strong></caption>
+                <thead>
+                    <th colspan="2" class="barshoptext">
+                        <strong>Barbeque Shop</strong>
+                    </th>
+                </thead>
+                <tr> <!--row1-->
+                    <td><span class="tableedit">Name</span></td>
+                    <td>
+                        <input placeholder="Please enter your name." name="name" type="text" minlength="1" maxlength="30" size="60">
+                    </td>
+                </tr>
+                <tr> <!--row2-->
+                    <td><span class="tableedit">Barbeque Topping</span></td>
+                    <td>
+                        <input type="radio" id="option1" name="topping">
+                        <label for="option1">Fried Onion Straws</label>
+                        <br>
+                        <input type="radio" id="option2" name="topping">
+                        <label for="option2">Grilled Vegetables</label>
+                        <br>
+                        <input type="radio" id="option3" name="topping">
+                        <label for="option3">Kaymak</label>
+                    </td>
+                </tr>
+                <tr> <!--row3-->
+                    <td><span class="tableedit">Barbeque Sauce</span></td>
+                    <td>
+                        <select>
+                            <option value="Mustard">Mustard</option>
+                            <option value="Creamy Garlic Sauce">Creamy Garlic Sauce</option>
+                            <option value="Hot Sauce">Hot Sauce</option>
+                            <option value="Ketchup">Ketchup</option>
+                            <option value="Ranch Dressing">Ranch Dressing</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr> <!--row4-->
+                    <td><span class="tableedit">Optional Extras</span></td>
+                    <td> 
+                        <input type="checkbox" id="option1" value="Extra Onion">
+                        <label for="option1">Extra Onions</label>
+                        <input type="checkbox" id="option2" value="Extra Vegetables">
+                        <label for="option2">Extra Vegetables</label>
+                    </td>
+                </tr>
+                <tr> <!--row5-->
+                    <td colspan="2"><span class="tableedit">Delivery Instructions</span>
+                    <br>
+                    <textarea placeholder="Fill out your street name and number." cols="100" rows="6" ></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span class="tableedit"><input type="submit" value="Send my order"></span></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
