@@ -1,4 +1,5 @@
-var arrayOfWords = ["orange", "flower", "door", "temperature", "math", "cookie", "engineering", "solution", "exam" , "story"];
+var arrayOfWords = ["orange", "lawyer", "crown", "midnight", "flower", "door", "plane", "enter",  "temperature", "network", "robot", "phone",
+                     "math", "cookie", "engineering", "solution", "exam" , "story", "address", "animal"];
 var n = arrayOfWords.length;
 var randomWordValue;
 var randomWordLength;
