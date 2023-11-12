@@ -1,0 +1,33 @@
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+}
+
+
+#word {
+    float: left;
+    width: 100%;
+}
+
+.letter {
+    width: 70px;
+    height: 50px;
+    float: left;
+    border: 1px solid;
+    border-color: black;
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 15px;
+    color: darkred;
+    background-color: rgb(228, 205, 175);
+    text-shadow: -1px 1px 2px;
+}
+
+.button {
+    color: orange;
+}
+
+.button:hover
+{
+    background-color: gray;
+}
