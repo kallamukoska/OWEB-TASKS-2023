@@ -12,10 +12,16 @@ var randoml1 = 0;
 var randoml2 = 0;
 var randoml3 = 0;
 var l1, l2, l3;
+var timerId;
+var gameEnded = false;
 
 
 function guess()
 {
+    if (gameEnded) {
+        return;
+    }
+
     ++count;
     var flag;
     var guessedLetters = new Array();
@@ -34,11 +40,13 @@ function guess()
     }
 
     if(flag == true){
+        gameEnded = true;
         if(count == 1){
             alert("CONGRATULATIONS! YOU GUESSED THE WORD IN " + 1 + " TRY." );
         }else{
             alert("CONGRATULATIONS! YOU GUESSED THE WORD IN " + count + " TRIES." );
         }
+        clearTimeout(timerId);
     }else if(flag==false && left != 1){
         --left;
         if(left == 1){
@@ -47,7 +55,23 @@ function guess()
             alert("TRY AGAIN! BE CAREFUL YOU HAVE ONLY " + left + " TRIES LEFT.");
         }
     }else if(left == 1){
+        gameEnded = true;
         alert("GAME OVER :(");
+        clearTimeout(timerId);
+    }
+}
+
+function timer() {
+    if (gameEnded) {
+        return;
+    }
+    alert("A TIMER HAS BEEN SET FOR 15 SECONDS. YOU'D BETTER HURRY! YOU HAVE ONLY 5 TRIES!");
+    timerId = setTimeout(timerFunction, 15000);
+}
+
+function timerFunction() {
+    if (!gameEnded) {
+        alert("TIME'S UP! YOU DIDN'T COMPLETE THE GAME, BUT YOU'RE GOOD!");
     }
 }
 
@@ -92,8 +116,11 @@ function start()
     document.getElementById("let"+randoml3).value = l3;
 
 
+    var startBtn = document.getElementById("startBtn");
+    startBtn.addEventListener("click", timer, false);
     var tryBtn = document.getElementById("tryBtn");
     tryBtn.addEventListener("click", guess, false);
+
 }
 
 window.addEventListener("load", start, false);
