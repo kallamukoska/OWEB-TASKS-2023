@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Adidas Store</title>
+</head>
+<body>
+
+    <!--header-->
+    <nav>
+        <div class="navTop">
+            <div class="navItem">.sneakers <!--LOGO OVDE TREBA-->
+            </div>
+
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Пребарувај..." class="searchInput">
+                    <img src="./imgFolder/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+
+            <div class="navItem">
+                <span class="bestPrices">Најдобри цени!</span>
+            </div>
+        </div>
+
+        <div class="navBottom">
+            <h3 class="menuItem">GAZELLE</h3>
+            <h3 class="menuItem">SAMBA</h3>
+            <h3 class="menuItem">SUPERSTAR</h3>
+        </div>
+    </nav>
+
+
+    <!--mybody-->
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="./imgFolder/gazelle1.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">GAZELLE<br>НОВА<br>КОЛЕКЦИЈА</h1>
+                <h2 class="sliderPrice">7490 MKD</h2>
+                <a href="#product">
+                    <button class="buyButton">КУПИ СЕГА!</button>
+                </a>
+                
+            </div>
+            <div class="sliderItem">
+                <img src="./imgFolder/samba1.png" alt="" class="sliderImg">
+                <!--this is going to be only a circle-->
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">SAMBA<br>НОВА<br>КОЛЕКЦИЈА</h1>
+                <h2 class="sliderPrice">5750 MKD</h2>
+                <a href="#product">
+                    <button class="buyButton">КУПИ СЕГА!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./imgFolder/star1.png" alt="" class="sliderImg">
+                <!--this is going to be only a circle-->
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">SUPERSTAR<br>НОВА<br>КОЛЕКЦИЈА</h1>
+                <h2 class="sliderPrice">5520 MKD</h2>
+                <a href="#product">
+                    <button class="buyButton">КУПИ СЕГА!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--icons-->
+    <div class="featers">
+        <div class="feature">
+            <img src="imgFolder/free-shipping.png" alt="" class="featureImg">
+            <span class="featureTitle">БЕСПЛАТНА ДОСТАВА</span>
+            <p style="color: green;">за нарачки над <strong>6000</strong> MKD.</p>
+        </div>
+        <div class="feature">
+            <img src="imgFolder/product-return.png" alt="" class="featureImg">
+            <span class="featureTitle">ЗАМЕНА И ВРАЌАЊЕ НА ПРОИЗВОДИ</span>
+            <p style="color: green;">во рок од <strong>30</strong> дена.</p>
+        </div>
+        <div class="feature">
+            <img src="imgFolder/phone.png" alt="" class="featureImg">
+            <span class="featureTitle">КОНТАКТИРАЈТЕ СО НАС</span>
+            <p style="color: green;">на Mail, Instagram или Facebook.<br><strong><a class="footerA" style="font-size: 10pt;" href="#footerID">ПОГЛЕДНИ ТУКА!</a></strong></p>
+        </div>
+    </div>
+
+    <!--showing the product-->
+    <div class="product" id="product">
+        <img src="./imgFolder/gazelle1.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">GAZELLE</h1>
+            <h2 class="productPrice">7490 MKD</h2>
+            <p class="productDesc">Whether you're training for the big marathon or taking a stroll around the neighborhood,
+                 you'll be prepared with adidas shoes for women.</p>
+
+                <div class="colors">
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+                <div class="sizes">
+                    <div class="size">37</div>
+                    <div class="size">38</div>
+                    <div class="size">39</div>
+                </div>
+                <button class="productButton">КУПИ СЕГА!</button>
+        </div>
+
+        <!--order here-->
+        <div class="payment">
+            <h1 class="payTitle">ЛИЧНИ ПОДАТОЦИ</h1>
+            <label>Име и презиме</label>
+            <input type = "text" placeholder="Кристина Каламукоска" class="payInput">
+            <label>Телефонски број</label>
+            <input type = "text" placeholder="+389XX-XXX-XXX" class="payInput">
+            <label>Адреса за испорака</label>
+            <input type = "text" placeholder="Ул._______ бр._______" class="payInput">
+            <label>Платежна картичка</label>
+            <input type = "text" placeholder="XXXX XXXX XXXX XXXX" class="payInput">
+
+            <button class="payButton" id="poraka">ПОТВРДИ</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+
+    <div class="footer" id="footerID">
+        <div class="footerItem">
+            <a  class="footerA" href="https://www.mail.com/">КОНТАКТИРАЈТЕ НÈ НА НАШАТА МАИЛ АДРЕСА</a>
+            <img src="imgFolder/email.png" alt="" class="footerImg">
+        </div>
+        <div class="footerItem">
+            <a  class="footerA" href="https://www.instagram.com/adidasoriginals/">ПОСЕТЕТЕ ГО НАШИОТ INSTAGRAM ПРОФИЛ</a>
+            <img src="imgFolder/instagram.png" alt="" class="footerImg">
+        </div>
+        <div class="footerItem">
+            <a  class="footerA" href="https://www.facebook.com/adidas">ПОСЕТЕТЕ ГО НАШИОТ FACEBOOK ПРОФИЛ</a>
+            <img src="imgFolder/facebook.png" alt="" class="footerImg">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
