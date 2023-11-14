@@ -112,10 +112,32 @@ close.addEventListener("click", () => {
     payment.style.display = "none";
 });
 
-function message()
+function message1()
 {
     alert("ВИ БЛАГОДАРИМЕ НА ДОВЕРБАТА!");
 }
 
 var payButton = document.getElementById("poraka");
-payButton.addEventListener("click", message, false);
+payButton.addEventListener("click", message1, false);
+
+
+const commentButton = document.querySelector(".leaveAComment");
+const comment = document.querySelector(".comment");
+const closeC = document.querySelector(".closeC");
+
+commentButton.addEventListener("click", () => {
+    comment.style.display = "flex";
+});
+
+closeC.addEventListener("click", () => {
+    comment.style.display = "none";
+});
+
+
+function message2()
+{
+    alert("ВИ БЛАГОДАРИМЕ ЗА КОМЕНТАРОТ!");
+}
+
+var comment1Button = document.getElementById("poraka1");
+comment1Button.addEventListener("click", message2, false);
